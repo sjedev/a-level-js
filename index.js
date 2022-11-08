@@ -1,8 +1,7 @@
-// Declare pi as a constant
-const pi = 3.14
+// Works for 10-digit ISBNs
 
-function circleArea(radius){
-  return((radius ** 2) * pi)
+function isISBN(){
+  
 }
 
-console.log(circleArea(prompt("Radius of the circle ")))
+console.log(isISBN(prompt("ISBN to check: ")))

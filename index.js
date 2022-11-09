@@ -1,11 +1,13 @@
 // isISBN, for ISBN-10 codes
 
+var prompt = require('prompt-sync')();
 let sum = 0
 
 function isISBN(str){
   // Reverse ISBN for calculation
   var reverseISBN = str.split("").reverse().join("")
   for(i = 0; i < 10; i++){
+    // Multiply first digit by 10, adds to second multiplied by 9, etc.
     sum += Number(reverseISBN[i]) * (i + 1)
   }
   // If sum % 11 is 0, it is a valid ISBN code

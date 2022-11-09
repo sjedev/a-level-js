@@ -1,5 +1,6 @@
 // isISBN, for ISBN-10 codes
 
+var prompt = require('prompt-sync')();
 let sum = 0
 
 function isISBN(str){

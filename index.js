@@ -1,1 +1,1 @@
-var prompt = require("prompt-sync")();
+// This is a workspace for testing programs before moving them into a folder.
